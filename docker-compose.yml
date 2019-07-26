@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  centminmod:
+    container_name: centminmod
+    image: biodr0ne/centminmod-beta
+    restart: unless-stopped
+    network_mode: host
+    environment: 
+      - TZ=Europe/London
+      - PUID=1000
+      - PGID=1000
+    volumes: 
+      - ./config:/config
