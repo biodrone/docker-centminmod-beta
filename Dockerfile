@@ -9,3 +9,5 @@ RUN yum install curl -y
 
 # Pull and Install Centminmod Beta
 RUN curl -O https://centminmod.com/betainstaller73.sh && chmod 0700 betainstaller73.sh && bash betainstaller73.sh
+
+# Ensure stuff works
