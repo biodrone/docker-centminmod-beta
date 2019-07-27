@@ -1,4 +1,4 @@
-FROM centos:7
+FROM arm32v7/centos:7
 LABEL maintainer="Josh Jacobs josh@joshjacobs.net"
 
 # Update distro
