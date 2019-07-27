@@ -3,7 +3,7 @@ version: '3'
 services:
   centminmod:
     container_name: centminmod
-    image: biodr0ne/centminmod-beta
+    build: .
     restart: unless-stopped
     network_mode: host
     environment: 
