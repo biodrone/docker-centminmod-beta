@@ -11,4 +11,5 @@ RUN yum install curl deltarpm -y
 RUN curl -O https://centminmod.com/betainstaller73.sh && chmod 0700 betainstaller73.sh && bash betainstaller73.sh
 
 # Ensure stuff works
-ENTRYPOINT centminmod
+WORKDIR /usr/local/src/centminmod
+ENTRYPOINT /usr/local/src/centminmod/centmin.sh
